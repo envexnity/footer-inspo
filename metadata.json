@@ -1,0 +1,8 @@
+{
+  "name": "Darkroom Scanline Footer",
+  "description": "An interactive darkroom-inspired editorial studio footer featuring live world clocks, multi-column navigation, and an interactive scanline halftone wordmark.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

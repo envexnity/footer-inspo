@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+}
+
+:root {
+  --dr-bg: #000000;
+  --dr-accent: #ff0d00;
+  --dr-accent-muted: #b81209;
+  --dr-surface: #250402;
+  --dr-surface-hover: #3b0704;
+  --dr-line: rgba(255, 13, 0, 0.24);
+  --dr-line-strong: rgba(255, 13, 0, 0.48);
+  --dr-cta-text: #000000;
+}
+
+html,
+body {
+  background-color: var(--dr-bg);
+  color: var(--dr-accent);
+  font-family: var(--font-mono);
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom thin darkroom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dr-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dr-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
